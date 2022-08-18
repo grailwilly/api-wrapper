@@ -50,6 +50,10 @@ gem "bootsnap", require: false
 
 # gem 'httparty'
 gem 'rest-client'
+gem 'mime-types'
+gem 'netrc'
+gem 'http-accept'
+gem 'http-cookie'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
