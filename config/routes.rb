@@ -9,6 +9,6 @@ Rails.application.routes.draw do
     # get "/creators/:id", to: 'creators#show'
     get "/developers", to: 'developers#index'
     # get "/developers/:id", to: 'developers#index'
-
+    get "/games", to: 'games#index'
   end
 end
