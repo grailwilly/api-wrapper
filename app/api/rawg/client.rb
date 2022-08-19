@@ -8,8 +8,8 @@ module Rawg
       response = Request.call(http_method: "get", endpoint: "/creators")
     end
 
-    # def self.creators_id
-    #   response = Request.call(http_method: "get", endpoint: "/creators/{id}")
+    # def self.creators_details
+    #   response = Request.call(http_method: "get", endpoint: "/creators/:id")
     # end
 
     def self.developers
