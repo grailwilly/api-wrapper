@@ -35,5 +35,9 @@ module Rawg
     def self.publishers
       response = Request.call(http_method: "get", endpoint: "/publishers")
     end
+
+    def self.stores
+      response = Request.call(http_method: "get", endpoint: "/stores")
+    end
   end
 end

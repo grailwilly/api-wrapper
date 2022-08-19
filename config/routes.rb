@@ -14,5 +14,6 @@ Rails.application.routes.draw do
     get "/platforms", to: 'platforms#index'
     get '/platforms/lists/parents', to: 'parents_platforms#index'
     get '/publishers', to: 'publishers#index'
+    get '/stores', to: 'stores#index'
   end
 end
