@@ -12,5 +12,6 @@ Rails.application.routes.draw do
     get "/games", to: 'games#index'
     get "/genres", to: 'genres#index'
     get "/platforms", to: 'platforms#index'
+    get '/platforms/lists/parents', to: 'parents_platforms#index'
   end
 end
