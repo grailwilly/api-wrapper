@@ -10,7 +10,7 @@ module Rawg
         headers: {'Content-Type' => 'application/json'}
       )
       { code: result.code, status: 'Success', data: JSON.parse(result.body)}
-    rescue RestClient::ExceptionWithResponse => Errors
+    rescue RestClient::ExceptionWithResponse => error
       { code: error.htpp_code, status: error.message, data: Errors.map(error.http_code)}
     end
   end
