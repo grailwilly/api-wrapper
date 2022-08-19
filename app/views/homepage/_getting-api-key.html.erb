@@ -1,0 +1,16 @@
+<header>
+  <h2>Getting an API Key</h2>
+</header>
+<p>Create account with <a href="https://rawg.io/">RAWG.io</a></p>
+<p>RAWG API <a href="https://rawg.io/apidocs">Documentation</a></p>
+<p>Sample requests:</p>
+<p><code>GET https://api.rawg.io/api/platforms?key=YOUR_API_KEY</code></p>
+<p><code>GET https://api.rawg.io/api/games?key=YOUR_API_KEY&dates=2019-09-01,2019-09-30&platforms=18,1,7</code></p>
+<h4>Api key Configuration</h4>
+<p>Run</p>
+<code>C:\Users\Your Name\AppName>EDITOR="code --wait" rails credentials:edit</code>
+<p>Add this inside your credential file.</p>
+<code>rawg_api: <br/> RAWG_API_TOKEN: YOUR API KEY HERE</code>
+<p>As you can see inside the request.rb (filepath: app/api/rawg/request.rb) , the TOKEN was declared as this:</p>
+<code>TOKEN = Rails.application.credentials.rawg_api[:RAWG_API_TOKEN]</code>
+<p>To access the API TOKEN you put in your credentials, run <code>rails s</code></p>
