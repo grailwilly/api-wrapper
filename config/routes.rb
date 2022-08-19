@@ -17,4 +17,6 @@ Rails.application.routes.draw do
     get '/stores', to: 'stores#index'
     get '/tags', to: 'tags#index'
   end
+
+  root 'homepage#index'
 end
