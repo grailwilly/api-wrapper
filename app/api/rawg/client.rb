@@ -19,5 +19,13 @@ module Rawg
     def self.games
       response = Request.call(http_method: "get", endpoint: "/games")
     end
+
+    def self.genres
+      response = Request.call(http_method: "get", endpoint: "/genres")
+    end
+
+    def self.platforms
+      response = Request.call(http_method: "get", endpoint: "/platforms")
+    end
   end
 end

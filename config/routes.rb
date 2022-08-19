@@ -10,5 +10,7 @@ Rails.application.routes.draw do
     get "/developers", to: 'developers#index'
     # get "/developers/:id", to: 'developers#index'
     get "/games", to: 'games#index'
+    get "/genres", to: 'genres#index'
+    get "/platforms", to: 'platforms#index'
   end
 end
