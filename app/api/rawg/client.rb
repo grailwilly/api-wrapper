@@ -39,5 +39,9 @@ module Rawg
     def self.stores
       response = Request.call(http_method: "get", endpoint: "/stores")
     end
+
+    def self.tags
+      response = Request.call(http_method: "get", endpoint: "/tags")
+    end
   end
 end
