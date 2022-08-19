@@ -12,7 +12,7 @@ module Rawg
     #   response = Request.call(http_method: "get", endpoint: "/creators/{id}")
     # end
 
-    def developers
+    def self.developers
       response = Request.call(http_method: "get", endpoint: "/developers")
     end
   end
