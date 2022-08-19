@@ -7,5 +7,11 @@ module Api
       end
       render json: creators
     end
+
+    def show
+      creator = Rawg::Client.creators_details(params[:id])
+      
+      render json: creator
+    end
   end
 end
