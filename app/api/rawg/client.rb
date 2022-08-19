@@ -31,5 +31,9 @@ module Rawg
     def self.parents_platforms
       response = Request.call(http_method: "get", endpoint: "/platforms/lists/parents")
     end
+
+    def self.publishers
+      response = Request.call(http_method: "get", endpoint: "/publishers")
+    end
   end
 end
