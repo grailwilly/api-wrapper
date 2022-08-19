@@ -3,4 +3,18 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  namespace :api do
+    get "/creator-roles", to: 'creator_roles#index'
+    get "/creators", to: 'creators#index'
+    # get "/creators/:id", to: 'creators#show'
+    get "/developers", to: 'developers#index'
+    # get "/developers/:id", to: 'developers#index'
+    get "/games", to: 'games#index'
+    get "/genres", to: 'genres#index'
+    get "/platforms", to: 'platforms#index'
+    get '/platforms/lists/parents', to: 'parents_platforms#index'
+    get '/publishers', to: 'publishers#index'
+    get '/stores', to: 'stores#index'
+    get '/tags', to: 'tags#index'
+  end
 end
