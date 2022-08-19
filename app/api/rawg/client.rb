@@ -16,6 +16,10 @@ module Rawg
       response = Request.call(http_method: "get", endpoint: "/developers")
     end
 
+    def self.developers_details(id)
+      response = Request.call(http_method: "get", endpoint: "/developers/#{id}")
+    end
+
     def self.games
       response = Request.call(http_method: "get", endpoint: "/games")
     end

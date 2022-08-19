@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     get "/creators", to: 'creators#index'
     get "/creators/:id", to: 'creators#show'
     get "/developers", to: 'developers#index'
-    # get "/developers/:id", to: 'developers#index'
+    get "/developers/:id", to: 'developers#show'
     get "/games", to: 'games#index'
     get "/genres", to: 'genres#index'
     get "/platforms", to: 'platforms#index'
