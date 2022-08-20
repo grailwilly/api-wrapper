@@ -1,9 +1,11 @@
 require "rails_helper"
 
-RSpec.describe Api::CreatorRolesController, :type => :controller do
-  describe "routing" do
-    it "routes to #index" do
-      expect(:get => "/creator-roles").to route_to(:controller => "index")
+RSpec.describe Api::CreatorRolesController, type: :controller do
+  describe "GET index" do
+    it "returns a 200" do
+      request.headers["Authorization"] = "foo"
+      get :index
+      expect(response).to have_http_status(:ok)
     end
   end
 end
